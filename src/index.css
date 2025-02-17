@@ -62,7 +62,7 @@ button:focus-visible {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -79,7 +79,8 @@ header {
 /* main */
 
 main {
-  height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: light) {
