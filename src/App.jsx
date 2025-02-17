@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       < Header />
-      <Main />
+      < Main />
     </>
   )
 }
