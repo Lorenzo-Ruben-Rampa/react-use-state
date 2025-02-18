@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import CardList from "./products/CardList.jsx";
 
-export default function Main() {
+export default function Main({ languages }) {
+
 
     const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 
@@ -12,21 +13,18 @@ export default function Main() {
     return (
         <main>
             <div className="container">
-                < CardList onLanguageSelect={handleLanguageSelect} />
+                < CardList languages={languages} onLanguageSelect={handleLanguageSelect} />
             </div>
             <div className="container">
-                <div className="accordion">
-                    <div className="accordion__title">
-                        {selectedLanguage ? (
-                            <>
-                                <h3>{selectedLanguage.title}</h3>
-                                <p>{selectedLanguage.description}</p>
-                            </>
-                        )
-                        }
+                {selectedLanguage && (
+                    <div className="accordion">
+                        <div className="accordion__title">
+                            <h3>{selectedLanguage.title}</h3>
+                            <p>{selectedLanguage.description}</p>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         </main>
-    )
-};
+    );
+}
