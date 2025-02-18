@@ -6,4 +6,5 @@ export default function Header() {
             <h1>Learn Web development</h1>
         </header>
     );
+
 }

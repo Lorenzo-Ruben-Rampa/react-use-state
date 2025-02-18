@@ -83,6 +83,13 @@ main {
   justify-content: center;
 }
 
+ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 20px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
