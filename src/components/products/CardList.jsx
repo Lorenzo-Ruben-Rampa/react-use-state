@@ -37,11 +37,11 @@ const CardList = () => {
   ];
 
   function renderCards() {
-    const renderCard = () => faqs.map(faq => <Card key={faq.id} titolo={faq.title} contenuto={faq.content} />)
-  };
-  return (
-    { renderCards }
-  )
+    return languages.map(language => (
+      <Card key={language.id} titolo={language.title} descrizione={language.description} />
+    ));
+  }
+  return renderCards()
 };
 
 export default CardList;  
