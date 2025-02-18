@@ -1,24 +1,13 @@
-export default function Card() {
+export default function Card({ title, onClick }) {
     return (
-        <>
-            <div className="container">
-                <ul>
-                    <li><button className="btn btn-primary">{titolo}</button></li>
-                    <li><button className="btn btn-primary">{titolo}</button></li>
-                    <li><button className="btn btn-primary">{titolo}</button></li>
-                    <li><button className="btn btn-primary">{titolo}</button></li>
-                    <li><button className="btn btn-primary">{titolo}</button></li>
-                    <li><button className="btn btn-primary">{titolo}</button></li>
-                </ul>
-            </div>
-            <div className="container">
-                <div className="accordion">
-                    <div className="accordion__title">
-                        <h3>{titolo}</h3>
-                        <p>{descrizione}</p>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+        // <div className="accordion">
+        //     <div className="accordion__title">
+        //         <h3>{title}</h3>
+        //         <p>{description}</p>
+        //     </div>
+        // </div>
+        <button onClick={onClick}>
+            {title}
+        </button>
+    );
 }
