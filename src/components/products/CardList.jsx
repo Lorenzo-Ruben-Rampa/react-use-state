@@ -1,7 +1,8 @@
-import React from 'react'
+import Card from "./Card"
 
-const AccordionList = () => {
+const CardList = () => {
 
+  // Array importato
   const languages = [
     {
       id: 1,
@@ -35,9 +36,12 @@ const AccordionList = () => {
     }
   ];
 
+  function renderCards() {
+    const renderCard = () => faqs.map(faq => <Card key={faq.id} titolo={faq.title} contenuto={faq.content} />)
+  };
   return (
-    <button className="btn btn-primary" > Titolo</button >
+    { renderCards }
   )
 };
 
-export default AccordionList;  
+export default CardList;  
