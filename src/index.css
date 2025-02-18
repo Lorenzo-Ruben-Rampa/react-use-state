@@ -78,16 +78,21 @@ header {
 
 /* main */
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 ul {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
-  gap: 20px;
+  padding-left: 0;
+  margin-bottom: 100px;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.accordion {
+  border: 1px solid grey;
+  padding: 1em;
 }
 
 @media (prefers-color-scheme: light) {

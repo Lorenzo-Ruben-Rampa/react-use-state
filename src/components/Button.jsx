@@ -1,12 +1,9 @@
 import React from 'react'
 
-const Button = (props) => {
-
-  const { children } = props;
-
+const Button = () => {
   return (
-    <button className="btn  btn-primary">{children}</button>
+    <button className="btn btn-primary" > Titolo</button >
   )
 };
 
-export default App
+export default Button;  
