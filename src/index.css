@@ -53,7 +53,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  background-color: #ffd900;
 }
 
 button:focus,
@@ -66,6 +66,11 @@ button:focus-visible {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+/* BONUS */
+.selected {
+  background-color: rgb(255, 187, 0);
 }
 
 /* header */

@@ -12,9 +12,7 @@ export default function Main({ languages }) {
 
     return (
         <main>
-            <div className="container">
-                < CardList languages={languages} onLanguageSelect={handleLanguageSelect} />
-            </div>
+            < CardList languages={languages} onLanguageSelect={handleLanguageSelect} />
             <div className="container">
                 {selectedLanguage && (
                     <div className="accordion">
