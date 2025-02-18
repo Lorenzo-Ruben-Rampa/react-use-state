@@ -1,5 +1,5 @@
 
-export default function Card() {
+export default function Accordion() {
     return (
         <div className="accordion">
             <div className="accordion__title">

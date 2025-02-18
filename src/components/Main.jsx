@@ -1,21 +1,21 @@
-import Button from "./Button";
-import Card from "./Card";
+import Button from "./AccordionList";
+import Card from "./Accordion";
 
 export default function Main() {
     return (
         <main>
             <div className="container">
                 <ul>
-                    <li><Button /></li>
-                    <li><Button /></li>
-                    <li><Button /></li>
-                    <li><Button /></li>
-                    <li><Button /></li>
-                    <li><Button /></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
                 </ul>
             </div>
             <div className="container">
-                <Card />
+                <Accordion />
             </div>
         </main >
     );
